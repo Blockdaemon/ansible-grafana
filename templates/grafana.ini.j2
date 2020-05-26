@@ -135,6 +135,11 @@ enabled = True
 mode = {{ grafana_log.mode | default('console, file') }}
 level = {{ grafana_log.level | default('info') }}
 
+# Console Logging
+[log.console]
+level = {{ grafana_log_console.level | default('info') }}
+format = {{ grafana_log_console.format | default('console') }}
+
 # Metrics
 {% if grafana_metrics != {} %}
 [metrics]

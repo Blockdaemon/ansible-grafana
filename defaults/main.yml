@@ -161,6 +161,11 @@ grafana_log:
 # mode: 'console file'
 # level: info
 
+# Grafana console logging configuration
+grafana_log_console:
+# level: info
+# format: console
+
 # Internal grafana metrics system
 grafana_metrics: {}
 #  interval_seconds: 10
